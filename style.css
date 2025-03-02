@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0654fe;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: absolute;
+    left: -240px;  
+    top: 0;
+    transition: left 0.3s ease;
+}
+.sidebar:hover {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info p {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.overview {
+    margin-bottom: 40px;
+}
+
+.overview-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-box {
+    background-color: #3f3f3f;
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.overview-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.overview-box p {
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.ads-management {
+    margin-top: 20px;
+}
+
+.ads-management button {
+    background-color: #0654fe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ads-management button:hover {
+    background-color: #555;
+}
+
+.ads-management table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ads-management td, .ads-management th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.ads-management thead {
+    background-color: #f1f1f1;
+}
+
+.settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.settings form label {
+    font-size: 18px;
+}
+
+.settings form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.settings form button {
+    background-color: #0654fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.settings form button:hover {
+    background-color: #555;
+}
